@@ -15,9 +15,14 @@ def find_max_value(array)
     end
   end
     return hval
-  # Add your solution here
 end
 
 def find_min_value(array)
-  # Add your solution here
+  lval = 0
+  array.length.times do |count|
+    if array[count] <= lval
+      lval = array[count]
+    end
+  end
+  return lval
 end
